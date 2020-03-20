@@ -9,3 +9,8 @@ if [ -z "${FIREBASE_PROJECT}" ]; then
     echo "FIREBASE_PROJECT is missing"
     exit 1
 fi
+
+
+firebase ${COMMAND} \
+  -m "${GITHUB_SHA}" \
+  --project ${FIREBASE_PROJECT}

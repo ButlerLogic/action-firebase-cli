@@ -1,6 +1,6 @@
-# Install Firebase
+# Run a Firebase CLI command
 
-Install the Firebase CLI command in your action toolchain.
+Run a command, like `firebase deploy --only hosting`.
 
 ## Configuring Firebase
 
@@ -25,12 +25,10 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Install Firebase CLI
+    - name: Firebase Command
       uses: butlerlogic/action-firebase-cli@stable
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FIREBASE_PROJECT: name-of-the-project
-    - name: Deploy Firebase Cloud Functions
-      run:
-        firebase deploy --only functions
+        COMMAND: deploy --only hosting
 ```
