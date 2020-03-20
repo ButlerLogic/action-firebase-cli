@@ -10,7 +10,7 @@ To retrieve the `FIREBASE_TOKEN`, run `firebase login:ci` on your desktop to ret
 
 The `FIREBASE_PROJECT` is the project ID, which can usually be found in the `.firebaserc` file (`default` attribute). This can be configured in the action instead of a secret.
 
-### Example workflow
+## Example workflow
 
 ```
 name: Build and Deploy
