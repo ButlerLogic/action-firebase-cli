@@ -1,0 +1,7 @@
+.*
+!.gitignore
+!.github
+!.dockerignore
+logs
+*.log
+_*

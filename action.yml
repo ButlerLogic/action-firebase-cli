@@ -1,0 +1,9 @@
+name: 'Install Firebase CLI'
+author: 'Corey Butler'
+description: 'A GitHub Action to install the Firebase tools'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'terminal'
+  color: 'red'
