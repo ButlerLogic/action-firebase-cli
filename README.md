@@ -2,7 +2,7 @@
 
 Install the Firebase CLI command in your action toolchain.
 
---
+## Configuring Firebase
 
 Firebase automatically uses the `FIREBASE_TOKEN` and `FIREBASE_PROJECT` environment variables when provided. 
 
