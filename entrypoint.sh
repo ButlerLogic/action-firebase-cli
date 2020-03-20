@@ -15,10 +15,10 @@ if [[ -v COMMAND ]]; then
   exit 1
 fi
 
-if [[ -v PRECOMMAND ]]; then
-  ${PRECOMMAND}
+if [[ -v PRERUN ]]; then
+  ${PRERUN}
 fi
 
-firebase ${COMMAND} \
+firebase ${FIREBASE_COMMAND} \
   -m "${GITHUB_SHA}" \
   --project ${FIREBASE_PROJECT}
