@@ -30,5 +30,6 @@ jobs:
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FIREBASE_PROJECT: name-of-the-project
-        COMMAND: deploy --only hosting
+        FIREBASE_COMMAND: deploy --only hosting
+        PRERUN: npm run build
 ```
